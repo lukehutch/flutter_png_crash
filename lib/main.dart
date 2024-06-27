@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
       rawImageBytes: photoBytes,
       onCropped: (croppedImage) async {
         final imageTempPngFile = await writeImageToTempPngFile(croppedImage);
-        print('Succeeded');
+        print('Succeeded: $imageTempPngFile');
       },
     );
   }
